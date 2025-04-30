@@ -37,6 +37,6 @@ PROC_NR=$(getconf _NPROCESSORS_ONLN)
 
 ## Build and install.
 make -j "$PROC_NR" clean
-make -j "$PROC_NR"
+make -j "$PROC_NR" -f Makefile.mingw32
 make -j "$PROC_NR" install
 make -j "$PROC_NR" clean
